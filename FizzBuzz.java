@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class FizzBuzz {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int number;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number : ");
         number = sc.nextInt();
 
-        if (number % 3 ==0 && number % 5 == 0){
+        if (number % 3 == 0 && number % 5 == 0) {
             System.out.println("FizzBuzz");
         } else if (number % 3 == 0) {
             System.out.println("Fizz");
@@ -16,5 +16,6 @@ public class FizzBuzz {
         } else {
             System.out.println(number);
         }
+        sc.close();
     }
 }

@@ -49,5 +49,6 @@ public class Mortgage_Calculator {
         mortage = principal * (monthlyinterest * Math.pow(R, no_of_months)) / ((Math.pow(R, no_of_months) - 1));
         String mortage_in_currency = NumberFormat.getCurrencyInstance().format(mortage);
         System.out.print(mortage_in_currency);
+        scanner.close();
     }
 }
