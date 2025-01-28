@@ -12,6 +12,7 @@ public class Mortgage_Calculator {
         int principal = 0;
         float rate = 0;
         int year = 0;
+        // The values are initialized
 
         Scanner scanner = new Scanner(System.in);
 
@@ -21,7 +22,7 @@ public class Mortgage_Calculator {
             if (principal >= 1000 && principal <= 1000000)
                 break;
             System.out.println("Enter the value in the range of 1K to 1M");
-        }
+        } // loops till the value of the principal is the valid range
 
         while (true) {
             System.out.print("Rate of Interest: ");
@@ -31,7 +32,7 @@ public class Mortgage_Calculator {
                 break;
             }
             System.out.println("Enter the rate of interest between 1 to 30 percent");
-        }
+        } // loops till the value of the rate is the valid range
 
         while (true) {
             System.out.print("Total time(years): ");
@@ -41,13 +42,15 @@ public class Mortgage_Calculator {
                 break;
             }
             System.out.println("Enter the year from the range 0 to 30 years");
-        }
+        } // loops till the value of the years is the valid range
 
         R = 1 + monthlyinterest;
 
         System.out.print("Mortage: ");
         mortage = principal * (monthlyinterest * Math.pow(R, no_of_months)) / ((Math.pow(R, no_of_months) - 1));
+        // This is the formula to find the morgage calculator
         String mortage_in_currency = NumberFormat.getCurrencyInstance().format(mortage);
+        // It the returns in the form pf the currency value
         System.out.print(mortage_in_currency);
         scanner.close();
     }
