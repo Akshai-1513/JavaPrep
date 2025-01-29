@@ -7,9 +7,9 @@ public class Vowels {
         char Character = sc.next().charAt(0); // This is used to get the character
 
         char[] vowels = { 'a', 'e', 'i', 'o', 'u' }; // Initialize the vowels in the array
-        for (int i = 0; i <= vowels.length; ++i) {
-            if (Character == vowels[i]) { // If character is equal to any of the volwels returns vowels
-                System.out.println("The character " + Character + " vowels");
+        for (char vowel : vowels) {
+            if (Character == vowel) { // If character is equal to any of the volwels returns vowels
+                System.out.println("The character " + Character + " vowels ");
                 break;
             } else { // Otherwise returns consonant
                 System.out.println("The Character " + Character + " is consonant");
