@@ -94,5 +94,6 @@ public class Patterns {
         pyramid(num);
         invert_pyramid(num);
         diamond(num);
+        sc.close();
     }
 }
