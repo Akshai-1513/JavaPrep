@@ -6,6 +6,7 @@ public class PNR {
         System.out.print("Enter the principla amount : ");
         int P = sc.nextInt();
         System.out.print("Enter the number of years : ");
+
         int N = sc.nextInt();
         System.out.print("Enter the rate of interest : ");
         int R = sc.nextInt();

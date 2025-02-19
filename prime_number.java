@@ -1,16 +1,18 @@
 public class prime_number {
     public static void main(String[] args) {
-        for (int i = 2; i <= 100; i++) {
-            int count = 0;
-            for (int j = 2; j <= i; j++) {
-                if (i % j == 0) {
-                    count++;
+        int num = 2;
+        while (num <= 100) {
+            int i = 2;
+            while (i < num) {
+                if (num % i == 0) {
                     break;
                 }
+                i++;
             }
-            if (count == 1) {
-                System.out.println(i);
+            if (i == num) {
+                System.out.println(num);
             }
+            num++;
         }
     }
 }

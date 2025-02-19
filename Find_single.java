@@ -14,6 +14,7 @@ public class Find_single {
         for (int i = 0; i < loop; i++) {
             arr[i] = sc.nextInt();
         }
+        sc.close();
         return arr;
     }
 
