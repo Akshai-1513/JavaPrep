@@ -86,27 +86,43 @@ public class Patterns {
     }
 
     static void hollow_square(int n) {
+        System.out.println("Hollow Square Pattern : ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (i == 0 || i == n - 1 || j == 0 || j == n - 1)
                     System.out.print("* ");
                 else
-                    System.out.print("  ");
+                    System.out.print("   ");
             }
             System.out.println();
         }
     }
 
+    static void hollow_right_triangle(int n) {
+        System.out.println("Hollow Right Triangle Pattern : ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (i == n - 1 || j == 0 || j == i)
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        square_Patterns(num);
-        right_triangle(num);
-        invert_right(num);
-        pyramid(num);
-        invert_pyramid(num);
-        diamond(num);
-        hollow_square(num);
+        // square_Patterns(num);
+        // right_triangle(num);
+        // invert_right(num);
+        // pyramid(num);
+        // invert_pyramid(num);
+        // diamond(num);
+        // hollow_square(num);
+        hollow_right_triangle(num);
         sc.close();
     }
 }
