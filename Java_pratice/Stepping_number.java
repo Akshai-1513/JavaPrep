@@ -9,7 +9,7 @@ public class Stepping_number {
         a = num % 10;
         num /= 10;
 
-        while(num != 0) {
+        while (num != 0) {
             b = num % 10;
             sub = b - a;
             sub = Math.abs(sub);
@@ -25,5 +25,6 @@ public class Stepping_number {
             System.out.println("The number is stepping number");
         else
             System.out.println("The number is not stepping number");
+        sc.close();
     }
 }
