@@ -125,18 +125,49 @@ public class Patterns {
         System.out.println();
     }
 
+    static void hollow_square2(int n) {
+        System.out.println("The 2nd model of hollow square");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n)
+                    System.out.print("1 ");
+                else if (j == n)
+                    System.out.print(n + " ");
+                else if (j == 1)
+                    System.out.print(i + " ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void bit_right_triangle(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (i % 2 == 0)
+                    System.out.print("1 ");
+                else
+                    System.out.print("0 ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        square_Patterns(num);
-        right_triangle(num);
-        invert_right(num);
-        pyramid(num);
-        invert_pyramid(num);
-        diamond(num);
-        hollow_square(num);
-        hollow_right_triangle(num);
-        Floyds_triangle(num);
+        // square_Patterns(num);
+        // right_triangle(num);
+        // invert_right(num);
+        // pyramid(num);
+        // invert_pyramid(num);
+        // diamond(num);
+        // hollow_square(num);
+        // hollow_right_triangle(num);
+        // Floyds_triangle(num);
+        // hollow_square2(num);
+        bit_right_triangle(num);
         sc.close();
     }
 }
