@@ -23,7 +23,7 @@ public class String_prime_no {
         }
         System.out.println();
         System.out.println("The sum of the prime numbers in java is : " + sum);
-    }
+       }
 
     public static boolean is_prime_number(int x){
         int count = 0;
