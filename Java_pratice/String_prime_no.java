@@ -13,12 +13,15 @@ public class String_prime_no {
             arr[i] = str.charAt(i);
         }
         System.out.println("The ASCII value of the String : " + Arrays.toString(arr));
+        System.out.print("The Prime numbers from the string are : ");
 
         for (int i = 0; i < arr.length; i++) {
             if (is_prime_number(arr[i])){
+                System.out.print(arr[i] + " ");
                 sum += arr[i];
             }
         }
+        System.out.println();
         System.out.println("The sum of the prime numbers in java is : " + sum);
     }
 
@@ -27,7 +30,7 @@ public class String_prime_no {
         if(x == 1 || x == 0)
             return false;
 
-        for (int i = 2; i <= x/2; i++) {
+        for (int i = 2; i <= Math.sqrt(x); i++) {
             if(x % i == 0)
                 count++;
         }
