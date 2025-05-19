@@ -26,7 +26,7 @@ public class Decrypt_String {
     }
     */
 
-//optimized version using the array , this prevent from the garbage value
+//optimized version using the array , this prevents from the garbage value
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
