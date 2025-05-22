@@ -157,16 +157,16 @@ public class Patterns {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        // square_Patterns(num);
-        // right_triangle(num);
-        // invert_right(num);
-        // pyramid(num);
-        // invert_pyramid(num);
-        // diamond(num);
-        // hollow_square(num);
-        // hollow_right_triangle(num);
-        // Floyds_triangle(num);
-        // hollow_square2(num);
+        square_Patterns(num);
+        right_triangle(num);
+        invert_right(num);
+        pyramid(num);
+        invert_pyramid(num);
+        diamond(num);
+        hollow_square(num);
+        hollow_right_triangle(num);
+        Floyds_triangle(num);
+        hollow_square2(num);
         bit_right_triangle(num);
         sc.close();
     }
