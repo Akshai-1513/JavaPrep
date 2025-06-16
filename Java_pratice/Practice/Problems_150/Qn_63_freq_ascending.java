@@ -1,13 +1,21 @@
 package Practice.Problems_150;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /*
-60. Frequency count with descending order printing 
-int a[] = { 50, 20, 150, 20, 50, 10, 30, 10, 10 };  
+63. Program to find the frequency count of every number in an array in ascending order
+    Input={40,20,10,50,20,10,30,40}
+    50->1
+    30->1
+    40->2
+    20->2
+    10->2
 */
 
-public class Qn_60_freq_decending {
+public class Qn_63_freq_ascending {
 
     public static void main(String[] args) {
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -18,7 +26,7 @@ public class Qn_60_freq_decending {
         System.out.println(map);
 
         List<Map.Entry<Integer, Integer>> entryList = new ArrayList<>(map.entrySet());
-        entryList.sort((a, b) -> b.getValue() - a.getValue());
+        entryList.sort((a, b) -> a.getValue() - b.getValue());
 
         for (Map.Entry<Integer, Integer> entry : entryList) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
