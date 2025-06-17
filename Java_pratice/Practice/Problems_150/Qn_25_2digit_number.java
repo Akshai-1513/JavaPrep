@@ -30,7 +30,7 @@ public class Qn_25_2digit_number {
                 num %= (int) (Math.pow(10, len));
                 len--;
             }
-            if(val.length() == 2) break;
+            if(val.length() <= 2) break;
             else{
                 num = Integer.parseInt(val);
                 sub = 0;
