@@ -8,7 +8,7 @@ package Practice.Problems_150;
                 -2,3,-1 so on
  */
 
-public class Qn_65_MaxContiguous {
+public class Qn_70_MaxSubarraySum {
     public static void main(String[] args) {
             int nums[] = {2, 3, -8, 7, -1, 2, 3};
             System.out.println(Max_contiguous(nums));
