@@ -1,7 +1,5 @@
-
+package Practice.Problems_150;
 import java.util.*;
-
-
 
 /*
 75. Find distinct elements in an array
