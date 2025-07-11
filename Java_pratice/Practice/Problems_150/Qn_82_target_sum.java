@@ -1,4 +1,4 @@
-/*
+package Practice.Problems_150;/*
 82. Given an array of integers nums and an integer target, return indices of the two
 numbers such that they add up to target.
     Input: arr[] = [0, -1, 2, -3, 1], target = -2
@@ -6,7 +6,7 @@ numbers such that they add up to target.
     Explanation: There is a pair (1, -3) with the sum equal to given target, 1 + (-3) = -28
 */
 
-public class Main
+public class Qn_82_target_sum
 {
 	public static void main(String[] args) {
 	    int nums[] = {0, -1, 2, 1};
