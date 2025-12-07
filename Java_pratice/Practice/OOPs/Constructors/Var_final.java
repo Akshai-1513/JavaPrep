@@ -19,6 +19,7 @@ class Demo{
 
         System.out.println(var.a + var.b);
 
+
         Var_final var1 = new Var_final(20, 10.6);
         System.out.println(var1.a + var1.b);
 

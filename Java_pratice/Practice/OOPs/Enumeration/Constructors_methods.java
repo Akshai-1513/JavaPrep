@@ -12,7 +12,7 @@ enum Student{
     Student(int age , int Roll_no, char grade){
         this.age = age ;
         this.Roll_no = Roll_no;
-        Grade = grade;
+        this.Grade = grade;
     }
 
     //to acces the particluar age or the Roll_no need to getter because it is private.
