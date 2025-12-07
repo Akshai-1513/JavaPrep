@@ -1,0 +1,59 @@
+STREAMS:
+    In Java, “stream” refers to a continuous flow of data.
+    Streams are used for input (reading data) and output (writing data).
+
+    Think of a stream like a pipe through which data moves from one place to another.
+
+    There are two types of streams :
+        Byte Stream
+        Character Streams
+
+Byte Streams:
+    Used for reading and writing the raw binary data(8 -bits)
+    Two types :
+        -> IntputStream
+            The inputStreams is used to read the data.
+            Important subclasses:
+                FileInputStream → read files
+                ByteArrayInputStream → read from byte array
+                BufferedInputStream → fast reading
+                ObjectInputStream → read objects (serialization)
+                FilterInputStream
+                PipedInputStream
+                DataInputStream → read primitives (int, float, etc.)
+
+        -> OutputStream
+            The outputStream is used to write the data
+            Important subclasses:
+                FileOutputStream → write to file
+                ByteArrayOutputStream → write to byte array
+                BufferedOutputStream → faster writing
+                ObjectOutputStream → write objects
+                FilterOutputStream
+                PipedOutputStream
+                DataOutputStream → write primitives
+
+Character Stream:
+    Used for reading and writing the text.
+    There are two types:
+      -> Reader (for reading characters):
+            Important subclasses:
+                FileReader → read text file
+                BufferedReader → read lines efficiently
+                InputStreamReader → converts bytes to chars (BRIDGE CLASS)
+                CharArrayReader
+                StringReader
+                FilterReader
+                PipedReader
+                PushbackReader
+
+        -> Writer (for writing characters) :
+            Important subclasses:
+                FileWriter → write to text file
+                BufferedWriter → fast writing
+                OutputStreamWriter → converts chars to bytes (BRIDGE CLASS)
+                CharArrayWriter
+                StringWriter
+                FilterWriter
+                PipedWriter
+                PrintWriter (very popular)
