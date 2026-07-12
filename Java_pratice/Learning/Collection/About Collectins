@@ -1,0 +1,43 @@
+In java there are several collections are used to optimize the program.
+Likewise, with the help of collections the user can new type of collections.
+
+The iteratable interface:
+    The iteratable interface has the collections interface.
+    Because all the collections in the in the collection interface will implement the iteratable, this will help the user to interate over the objects such as list.
+    The iteratable interface specifies an iterator to access the elements sequentially of an iterable objects.
+
+
+List Interface:
+    The list elements are stored on an order and the list can contain the duplicates.
+    List methods:
+        E get(int index)
+        E set(int index, E element)
+        void add(int index, E element)
+        boolean addAll(int index, Collection<? extends E> c)
+        E remove(int index)
+
+    List implementaions:
+        ArrayList
+        LinkedList
+        Vector
+
+    ArrayList:
+        It s used we don't know the size of the array.
+    Vector:
+        It's similar to the ArrayList but, the vector is thread safe.
+
+        ArrayList         |        LinkedList:
+    Direct access of the  |   There is no direct acess
+    element.              |
+
+
+    ListIterator:
+        interface ListIterator<E> extends Iterator<E>  {
+            boolean hasNext();
+            boolean hasPrevious();
+            E next(); // Element after the cursor
+            E previous(); // Element before the cursor
+
+            List provides two methods
+                ListIterator<E> listIterator()
+                ListIterator<E> listIterator(int index)

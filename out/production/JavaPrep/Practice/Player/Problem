@@ -1,0 +1,120 @@
+.
+
+---
+
+## Problem Statement
+
+Create a class **Player** with the following attributes:
+
+* `playerId` – int
+* `playerName` – String
+* `runs` – int
+* `playerType` – String
+* `matchType` – String
+
+The above attributes should be **private**. Write the required **getters**, **setters**, and a **parameterized constructor**.
+Create a class **MyClass** with the `main()` method.
+Implement the following two static methods in the `MyClass` class:
+
+### 1. `findPlayerWithLowestRuns()`
+
+This method takes an array of `Player` objects and a `String` (`playerType`) as input parameters.
+The method should return the **lowest runs** scored by a player whose `playerType` matches the given input.
+If no player with the given `playerType` is found, the method should return **0**.
+
+> **Note:** The search should be **case-insensitive**.
+
+---
+
+### 2. `findPlayerByMatchType()`
+
+This method takes an array of `Player` objects and a `String` (`matchType`) as input parameters.
+The method should return an array of `Player` objects whose `matchType` matches the given input, sorted in **descending order of `playerId`**.
+If no player with the given `matchType` is found, the method should return **null**.
+
+> **Note:** The search should be **case-insensitive**.
+
+---
+
+### Additional Notes
+
+* No two players will have the same `playerId`.
+* No two players will have the same `runs`.
+
+---
+
+### Output Format
+
+#### For `findPlayerWithLowestRuns()`
+
+* If the returned value is greater than `0`, print the returned runs.
+* Otherwise, print:
+
+```text
+No such player
+```
+
+Example:
+
+```text
+25
+```
+
+where `25` is the lowest runs scored by the player.
+
+---
+
+#### For `findPlayerByMatchType()`
+
+* If the returned array is not `null`, print the `playerId` of each player (one per line).
+* Otherwise, print:
+
+```text
+No Player with given matchType
+```
+
+Example:
+
+```text
+13
+11
+```
+
+where `13` and `11` are the `playerId` values in descending order.
+
+---
+
+### Input
+
+Before calling the above methods, use a `Scanner` object to read the details of **4 Player objects** in the following order:
+
+1. `playerId`
+2. `playerName`
+3. `runs`
+4. `playerType`
+5. `matchType`
+
+After reading all four players, read two more strings:
+
+1. `playerType`
+2. `matchType`
+
+These values will be passed to the respective methods.
+
+---
+
+### Important Note
+
+When using `Scanner`, if you read an integer using `nextInt()` and then immediately read a string using `nextLine()`, call an extra `nextLine()` after `nextInt()` to consume the newline character.
+
+Example:
+
+```java
+int x = sc.nextInt();
+sc.nextLine(); // Consume the newline
+String str = sc.nextLine();
+```
+
+---
+
+**Main class name:** `MyClass`
